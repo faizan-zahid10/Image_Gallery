@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Gallery</title>
     <link rel="stylesheet" href="gallery_styling.css">
+    <script src="gallery_logic.js"></script>
+    <script src="https://kit.fontawesome.com/ee70d25103.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container">
         <h1>Take a look at your image gallery</h1>
         <div class="thumbnail">
-            <img src="resources/scene1.jpg" alt="">
+            <i class="fa-solid fa-arrow-left" onclick="prev()"></i>
+            <img src="resources/scene1.jpg" alt="" id="thumb_image">
+            <i class="fa-solid fa-arrow-right" onclick="nxt()"></i>
         </div>
         <div class="collection">
-            <img src="resources/scene1.jpg" alt="">
-            <img src="resources/scene2.jpg" alt="">
-            <img src="resources/scene3.jpg" alt="">
-            <img src="resources/scene4.jpg" alt="">
-            <img src="resources/scene5.jpg" alt="">
+            <img src="resources/scene1.jpg" alt="" onclick="placeImage(this)">
+            <img src="resources/scene2.jpg" alt="" onclick="placeImage(this)">
+            <img src="resources/scene3.jpg" alt="" onclick="placeImage(this)">
+            <img src="resources/scene4.jpg" alt="" onclick="placeImage(this)">
+            <img src="resources/scene5.jpg" alt="" onclick="placeImage(this)">
 
         </div>
     </div>
